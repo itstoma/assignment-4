@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         WeightedGraph<String> graph = new WeightedGraph<>(true);
 
-        graph.addVertex("Almaty", "Astana", 2.1);
-        graph.addVertex("Almaty", "Shymkent", 7.2);
-        graph.addVertex("Shymkent", "Astana", 3.9);
-        graph.addVertex("Astana", "Kostanay", 3.5);
-        graph.addVertex("Shymkent", "Kyzylorda", 5.4);
+        graph.addVertex("Almaty");
+        graph.addVertex("Almaty");
+        graph.addVertex("Shymkent");
+        graph.addVertex("Astana");
+        graph.addVertex("Shymkent");
 
         System.out.println("Dijkstra:");
         Search<String> djk = new DijkstraSearch<>(graph, "Almaty");
